@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image compression — source demo</title>
+<style>
+body{font:16px system-ui,sans-serif;line-height:1.6;max-width:680px;margin:4rem auto;padding:0 1.5rem;background:#f7f8fa;color:#18212c}main{background:white;padding:2rem;border:1px solid #ddd;border-radius:12px}label{display:block;margin:1rem 0}button{padding:.7rem 1rem;cursor:pointer}li{margin:1rem 0}a{color:#0756a1}#status{white-space:pre-wrap}
+</style>
+<main>
+<h1>Image compression</h1>
+<p>Source demo. Compression requires your own configured API and storage. No hosted backend is included.</p>
+<form id="compress-form">
+<label>Images (up to 10 MB each)<br><input id="files" type="file" accept="image/png,image/jpeg,image/webp,image/avif,image/heic,image/heif,image/bmp" multiple required></label>
+<button id="submit" type="submit">Compress images</button>
+</form>
+<p id="status" role="status" aria-live="polite"></p>
+<ul id="downloads"></ul>
+</main>
+<script src="upload.bundle.js"></script>
+<script src="app.js"></script>
+</html>
